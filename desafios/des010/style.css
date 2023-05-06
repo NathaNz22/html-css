@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url("fonts/idroid.otf") format(opentype);
+}
+
+body{
+    background-color: #84E1AD;
+    font: 1em Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+    text-indent: 1em;
+}
+
+h1, h2{
+    font-family: idroid;
+    color: #3F7658;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+h1#tituloHistoriaMascote{
+    font-size: 2em;
+}
+
+header{
+    height: 6.85em;
+    background-image: linear-gradient(180deg, #21a75d 40%, #094423);
+}
+
+header > h1{
+    font-family: "Bebas Neue", cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header > p{
+    text-align: center;
+    text-shadow: 0.01em 0.001em 0.1em black;
+    color: white;
+}
+
+header > nav > p{
+    display: block;
+    background-color: #126134;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+header > nav > p > a{
+    padding-left: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > p > a.navs:hover{
+    text-decoration: underline;
+    color: #094423;
+}
+
+main{
+    background-color: snow;
+    padding: 0.1em 0.8em 0.8em 1em;
+    margin: auto 23em;
+}
+
+article#surgeUmNovoMascote > div#video{
+    background-color: #0f703b;
+    text-align: center;
+
+}
+
+strong{
+    color: #198d4d;
+}
+
+aside{
+    height: auto;
+    background-color: #b7f5d3;
+    border-radius: 1em;
+
+    padding: 0em 0em 0.5em 0em;
+}
+
+aside > p{
+    padding: 0.5em;
+}
+
+aside > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #126134;
+    border-radius: 0.5em 0.5em 0em 0em;
+
+    padding: 0.3em;
+}
+
+
+aside > ul#iconlist{
+    display: inline-block;
+    width: 20em;
+
+    list-style-type: "\2714\0020\0020";
+    columns: 2;
+    list-style-position: outside;
+    padding-left: 1.6em;
+}
+
+aside > ul#iconlist{
+    margin-left: 0.5em;
+}
+
+aside > p > a{
+    text-decoration: none;
+    color: #0f703b;
+    font-weight: bolder;
+}
+
+aside > p > a:hover{
+    text-decoration: underline;
+    color: #074b26;
+}
+
+article#finalizacao > p > strong{
+    color: #198d4d;
+}
+
+footer{
+    background-color: #074b26;
+}
+
+footer > p{
+    color: white;
+    padding: 0.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer > p > strong{
+    font-weight: bolder;
+    color: white;
+}

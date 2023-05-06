@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras nas Caixas</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        article#caixa{
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            border-radius: 10px 25px;
+
+            /* sombra aqui */
+
+            box-shadow: 3px 3px 10px black;
+        }
+        a#link{
+            color: black;
+            font: 1em Arial, Helvetica, sans-serif;
+        }
+
+        a#link:hover{
+            color: rgb(156, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <a id="link" href="index.html">Página Inicial</a>
+
+    <article id="caixa">
+        <h1>Sombras</h1>
+        <p>
+            Usando sombras!
+        </p>
+    </article>
+</body>
+</html>

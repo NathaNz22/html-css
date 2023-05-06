@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: darkslategray;
+}
+h1{
+    color: darkorange;
+    font-size: 2em;
+}
+p{
+    text-align: justify;
+    font: normal 1.2em Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+}
+
+a{
+    font: bold 1em Arial, Helvetica, sans-serif;
+    color: rgb(199, 30, 30);
+    text-decoration: none;
+}
+a:visited{
+    font: italic oblique 1em Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+a:hover{
+    text-decoration: underline;
+}
+.especial:hover{
+    color: darkblue;
+    text-decoration: none;
+}
+.especial::before{
+    content: '> ';
+}
+.especial::after{
+    content: ' <';
+}
+.titulos{
+    color: rgb(216, 168, 168);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    background-color: brown;
+    width: 400px;
+}
+#link1{
+    text-decoration: none;
+    color: black;
+    background-color: darkgray;
+}
+

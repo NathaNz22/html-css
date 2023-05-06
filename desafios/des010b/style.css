@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url("fonts/idroid.otf") format(opentype);
+}
+
+:root{
+    --cor0: #c5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FAB66;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: 'Bebas Neue', cursive;
+    --font2: Android, sans-serif;
+}
+
+*{
+    margin: auto;
+    padding: 0px;
+
+    font-size: 1em;
+    font-family: var(--font0);
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+p{
+    font-size: 1.1em;
+    text-indent: 1.3em;
+    padding-bottom: 1em;
+    padding: 1em 1em;
+
+    text-align: justify;
+    line-height: 2em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2) 10%, var(--cor5));
+    color: white;
+
+    padding: 0.5em;
+    padding-left: 1em;
+}
+
+header > h1{
+    font-family: var(--font1);
+    font-size: 2.9em;
+    font-weight: normal;
+    padding-top: 0.3em;
+
+    text-align: center;
+    text-shadow: 0em 0em 0.5em rgb(29, 28, 28);
+    
+}
+
+header > p{
+    width: 27em;
+    text-align: center;
+    text-shadow: 0em 0em 0.5em rgb(29, 28, 28);
+    line-height: 22px;
+
+    padding: 0.5em 0em 0.2em 0em;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding-bottom: 0.7em;
+    padding-left: 0.7em;
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--cor0);
+
+    border-radius: 0.4em;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+
+    text-shadow: 0em 0em 0.3em rgba(29, 28, 28, 0.705);
+    font-weight: bold;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    transition-duration: 0.6s;
+}
+
+/* main */
+
+main{
+    max-width: 1000px;
+    min-width: 400px;
+    padding-top: 1em;
+    margin-bottom: 0.7em;
+    border-radius: 0em 0em 0.5em 0.5em;
+    background-color: snow;
+    box-shadow: 0px 0px 15px rgba(29, 28, 28, 0.705);
+}
+
+article#historiaDoAndroid > h1{
+    font-family: var(--font2);
+    font-size: 2.2em;
+
+    text-align: center;
+    padding: 0em 0em 0.2em 0.5em;
+
+    color: var(--cor4);
+}
+
+article#historiaDoAndroid > h2{
+    display: inline-block;
+
+    border-radius: 0.3em;
+    width: 25em;
+    font-family: var(--font2);
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0) 15%, white);
+
+    padding: 0em 0em 0em 0.2em;
+
+    margin-left: 0.5em;
+    color: var(--cor4);
+}
+
+strong{
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+/* Imagens */
+
+img{
+    width: 100%;
+}
+
+
+img#dandroids{
+    display: block;
+
+    width: 90%;
+    margin: auto;
+}
+
+img#irina_blok{
+    display: block;
+
+    width: 95%;
+    margin: auto;
+}
+
+img#bugdroid{
+    display: block;
+
+    max-width: 350px;
+    margin: auto;
+}
+
+
+/* Video */
+
+div.video{
+    position: relative;
+    height: 0px;
+    background-color: var(--cor4);
+    margin: 0px;
+    padding-bottom: 56.2%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* Extra */
+
+aside{
+    padding: 1em;
+    padding-bottom: 0px;
+    
+}
+
+aside > article#aprenderMais{
+    background-color: var(--cor0);
+    border-radius: 1em 1em 0.9em 0.9em;
+    box-shadow: 0px 0px 10px rgba(29, 28, 28, 0.705);
+}
+
+aside > article#aprenderMais > h3{
+    font-size: 1.2em;
+    font-family: var(--font3);
+    color: white;
+    text-shadow: 0em 0em 0.1em rgb(29, 28, 28);
+    font-weight: bold;
+    padding-left: 0.3em;
+
+    border-radius: 0.9em 0.9em 0em 0em;
+    background-color: var(--cor3);
+    border: 0.5em solid var(--cor3);
+}
+
+aside > article#aprenderMais > ul{
+    padding: 0.5em;
+    columns: 2;
+    list-style-type: "\2714\0020\0020";
+    list-style-position: inside;
+}
+
+/* Links */
+
+a.link{
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link:hover{
+    background-color: var(--cor3);
+    border-radius: 0.2em;
+    transition-duration: 0.3s;
+}
+
+a.link::after{
+    content: "\1F517";
+}
+
+/* Finalização */
+
+article.finalizacao > p{
+    padding-bottom: 1.5em;
+}
+
+/* Footer */
+
+footer > p{
+    background-color: var(--cor4);
+    text-shadow: 0px 0px 0.2em rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+}
+
+/* Links Footer */
+
+footer > p > a.link{
+    color: white;
+
+}
+
+footer > p > strong{
+    color: white;
+}

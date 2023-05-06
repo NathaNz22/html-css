@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            border: 10px solid black;
+
+            border-image-source: url('nome.png');
+
+            border-image-slice: 25;
+
+            border-image-repeat: repeat/stretch/round;
+
+            border-image: url('borda.png') 25 round;
+
+            /*  border-image-source
+                border-image-slice
+                border-image-repeat */
+        }
+    </style>
+</head>
+<body>
+    <h1>NathaNz22</h1>
+</body>
+</html>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body{
+    font: 1em Arial, Helvetica, sans-serif;
+    background-color: #2BAEED;
+    padding: 0px 5px;
+}
+
+header{
+    width: 500px;
+    margin: auto;
+    background-color: #9d8bb8;
+    box-shadow: 2px 1px 7px;
+    border-radius: 10px;
+}
+
+header > h1{
+    text-align: center;
+}
+
+nav > ul > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-right: 35px;
+}
+
+nav > ul > a:hover{
+    text-decoration: underline;
+    color: #442DF7;
+}
+
+section{
+    width: 750px;
+    margin: auto;
+}
+
+article{
+    box-shadow: 2px 1px 7px black;
+}
+
+article#noticia1{
+    display: inline-block;
+    width: 350px;
+    height: 185px;
+    background-color: #2D80F7;
+    padding: 1px 5px;
+    text-align: justify;
+    margin-right: 10px;
+    border-radius: 10px 20px;
+}
+
+article#noticia2{
+    display: inline-block;
+    width: 350px;
+    height: 185px;
+    background-color: #2D80F7;
+    padding: 1px 5px;
+    text-align: justify;
+    margin-right: 10px;
+    border-radius: 20px 10px;
+}
+
+aside{
+    width: 185px;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1em;
+    background-color: #2739FF;
+}
+
+aside > p{
+    text-align: center;
+    margin: 3px auto;
+    font-weight: bolder;
+
+}
+
+span.nome{
+    font-style: italic;
+}
+
+footer > p#creditos{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    font-weight: bolder;
+}
