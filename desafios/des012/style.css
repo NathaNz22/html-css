@@ -79,6 +79,7 @@ a:hover{
     padding: 10px;
     margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.63);
 }
 
 #img_1{
