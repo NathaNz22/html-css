@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: var(--lilas);
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+    margin: auto;
+    border-radius: 20px;
+
+    background-color: white;
+
+}
+
+div#imagem {
+    width: 250px;
+    height: 200px;
+    
+    border-radius: 18px 18px 0px 0px;
+
+    background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+main h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+main p {
+    font-size: 0.8em;
+    padding: 0px 13px 13px 13px;
+}
+
+div#formulario {
+    position: relative;
+    padding: 0px 10px 10px 10px;
+}
+
+div#campoEmail, div#campoSenha {
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--lilas);
+}
+
+div.material-symbols-outlined {
+    transform: translate(10%, 30%);
+    font-size: 2em;
+    user-select: none;
+    color: white;
+}
+
+input.digitar {
+    height: 40px;
+    width: 180px;
+    margin-left: 35px;
+    transform: translate(0, -75%);
+
+    font-size: 1.1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171);
+
+    border-radius: 10px;
+
+    background-color: #45d8d3;
+}
+
+div#campoEmail input:focus, div#campoSenha input:focus {
+    background-color: white;
+}
+
+div#entrar input {
+    width: 100%;
+    padding: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: 1px solid #1c9ae2;
+
+    font-size: 1.2em;
+    text-align: center;
+
+    background-color: #1082c4;
+    color: white;
+}
+
+div#entrar input:hover {
+    background-color: #004b77;
+    cursor: pointer;
+}
+
+div#esqueciSenha a {
+    display: block;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid #1c9ae2;
+    
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: #0886cf;
+
+}
+
+div#esqueciSenha a:hover {
+    background-color: #a4d9f8;
+}
+
+div#esqueciSenha div.material-symbols-outlined {
+    color: #013553;
+    font-size: 1em;
+}
