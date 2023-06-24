@@ -12,6 +12,7 @@ body, html {
     background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -20,6 +21,7 @@ main {
 
     position: relative;
     margin: auto;
+    transform: scale(1.2);
 }
 
 section#login {
