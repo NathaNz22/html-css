@@ -23,6 +23,9 @@ main {
 }
 
 section#login {
+    width: 250px;
+    height: 515px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +41,7 @@ section#login {
     /* Imagem */
 
 div#imagem {
-    height: 25vh;
+    height: 200px;
     background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) no-repeat;
     background-size: cover;
 }
