@@ -1,133 +1,160 @@
 @charset "UTF-8";
 
-:root {
-    --verde: #49a09d;
-    --lilas: #5f2c82;
-}
-
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body, html {
-    background-color: var(--lilas);
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
+    width: 500px;
+    height: 100vh;
+
+    position: relative;
+    margin: auto;
+}
+
+section#login {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 250px;
-    margin: auto;
     border-radius: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
     overflow: hidden;
 
     background-color: white;
-
 }
 
-div#imagem {
-    width: 250px;
-    height: 200px;
+    /* Imagem */
 
-    background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) center center no-repeat;
+div#imagem {
+    height: 25vh;
+    background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) no-repeat;
     background-size: cover;
 }
 
-main h1 {
+div#formulario > h1 {
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-align: center;
-    padding: 15px;
 }
 
-main p {
+div#formulario > p {
+    padding: 0px 10px 5px 10px;
+
     font-size: 0.8em;
-    padding: 0px 13px 13px 13px;
 }
 
-div#formulario {
+        /* Campo de entrada de Email e Senha*/
+
+div.campos {
     position: relative;
-    padding: 0px 10px 10px 10px;
+    height: 2.5em;
+    background-color: #5f2c82;
+
+    border-radius: 8px;
+    margin: 0px 10px 5px 10px;
 }
 
-div#campoEmail, div#campoSenha {
-    height: 50px;
-    margin: 5px;
-    border-radius: 10px;
-    background-color: var(--lilas);
+.campos input {
+    width: calc(100% - 47px);
+    height: calc(100% - 4px);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-39%, -50%);
+
+    border: 1px solid #abd4f5;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+
+    font-size: 1em;
+
+    background-color: #abd4f5;
 }
+
+.campos input:focus {
+    background-color: white;
+}
+
+#campoSenha {
+    margin-bottom: 1px;
+}
+
+        /* Ícones */
 
 div.material-symbols-outlined {
-    transform: translate(10%, 30%);
     font-size: 2em;
+
+    transform: translate(20%, 15%);
+
     user-select: none;
     color: white;
 }
 
-input.digitar {
-    height: 40px;
-    width: 180px;
-    margin-left: 35px;
-    transform: translate(0, -75%);
-
-    font-size: 1.1em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171);
-
-    border-radius: 10px;
-
-    background-color: #45d8d3;
-}
-
-div#campoEmail input:focus, div#campoSenha input:focus {
-    background-color: white;
-}
+        /* Botão de "Entrar" */
 
 div#entrar input {
-    width: 100%;
-    padding: 10px;
+    width: calc(100% - 20px);
+    height: 2.5em;
 
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-radius: 7px;
-    border: 1px solid #1c9ae2;
+    transform: translate(4%, 0%);
+    border: 1px solid #3dafa9;
+    margin-top: 5px;
+    border-radius: 5px;
 
-    font-size: 1.2em;
     text-align: center;
-
-    background-color: #1082c4;
+    font-size: 1em;
     color: white;
-}
-
-div#entrar input:hover {
-    background-color: #004b77;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    
+    background-color: #54a1e0;
     cursor: pointer;
 }
 
+div#entrar input:hover {
+    background-color: #2c5e86;
+}
+
+        /* Botão "Esqueci a senha" */
+
 div#esqueciSenha a {
     display: block;
-    width: 100%;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 7px;
-    border: 1px solid #1c9ae2;
-    
-    font-size: 1.2em;
+    width: calc(100% - 20px);
+    height: 2.5em;
+
+    transform: translate(4%, 0%);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 6px;
+    border: 1px solid #3dafa9;
+    border-radius: 5px;
+
     text-align: center;
+    color: #2a807b;
     text-decoration: none;
-    color: #0886cf;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 
+    cursor: pointer;
+}
+
+div#esqueciSenha .material-symbols-outlined {
+    font-size: 0.9em;
+    color: #2a807b;
 }
 
 div#esqueciSenha a:hover {
-    background-color: #a4d9f8;
-}
-
-div#esqueciSenha div.material-symbols-outlined {
-    color: #013553;
-    font-size: 1em;
+    background-color: #7ddbdb;
 }
