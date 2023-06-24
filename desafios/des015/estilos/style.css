@@ -25,6 +25,7 @@ main {
     width: 250px;
     margin: auto;
     border-radius: 20px;
+    overflow: hidden;
 
     background-color: white;
 
@@ -33,8 +34,6 @@ main {
 div#imagem {
     width: 250px;
     height: 200px;
-    
-    border-radius: 18px 18px 0px 0px;
 
     background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) center center no-repeat;
     background-size: cover;
