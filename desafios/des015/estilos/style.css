@@ -41,12 +41,17 @@ section#login {
     /* Imagem */
 
 div#imagem {
+    display: block;
     height: 200px;
     background: red url(../imagens/pexels-damir-mijailovic-3651579.jpg) no-repeat;
     background-size: cover;
 }
 
+    /* Formulário */
+
 div#formulario > h1 {
+    display: block;
+
     padding-top: 13px;
     padding-bottom: 13px;
     text-align: center;
@@ -112,9 +117,8 @@ div#entrar input {
     width: calc(100% - 20px);
     height: 2.5em;
 
-    transform: translate(4%, 0%);
     border: 1px solid #3dafa9;
-    margin-top: 5px;
+    margin: 10px 10px 0px 10px;
     border-radius: 5px;
 
     text-align: center;
@@ -134,13 +138,9 @@ div#entrar input:hover {
 
 div#esqueciSenha a {
     display: block;
-
-    width: calc(100% - 20px);
     height: 2.5em;
 
-    transform: translate(4%, 0%);
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: 5px 10px 0px 10px;
     padding-top: 6px;
     border: 1px solid #3dafa9;
     border-radius: 5px;
