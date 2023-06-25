@@ -8,12 +8,12 @@
 
     section#login {
         width: 90vw;
-        height: 50vh;
+        height: 43vh;
     }
         /* Imagem */
     div#imagem {
-        width: 30vw;
-        height: 100vh;
+        width: 40%;
+        height: 100%;
         float: left;
 
         background: rgb(90, 101, 201) url(../imagens/pexels-luis-quintero-2471235.jpg);
@@ -21,14 +21,9 @@
 
         /* Formulário */
 
-    /* Ícones */
-    div.material-symbols-outlined {
-        font-size: 2.5em;
-    }
-
     div#formulario {
-        width: 60vw;
-        height: 100vw;
+        width: 60%;
+        height: 100%;
         float: right;
     }
 
@@ -39,19 +34,8 @@
     div#formulario > p {
         padding: 20px;
         padding-top: 0px;
-        font-size: 1.1em;
+        font-size: 1em;
     }
-
-    div.campos {
-        height: 50px;
-    }
-
-    div.campos input {
-        width: 88%;
-
-        transform: translate(-44%, -50%);
-    }
-
 }
 
 @media screen and (min-width: 993px) {
@@ -61,7 +45,7 @@
 
     section#login {
         width: 95vw;
-        height: 52vh;
+        height: 45vh;
     }
 
         /* Imagem */
@@ -80,7 +64,7 @@
         /* Formulário */
 
     div#formulario {
-        width: 52vw;
+        width: 55%;
         height: 100%;
         float: left;
     }
@@ -90,21 +74,7 @@
     }
 
     div#formulario > p {
-        font-size: 1.3em;
+        font-size: 1.1em;
         padding-bottom: 20px;
-    }
-    div.campos {
-        width: 96.5%;
-        height: 50px;
-    }
-
-        /* Ícones */
-    div.material-symbols-outlined {
-        font-size: 2.5em;
-    }
-
-    .campos input {
-        width: 85%;
-        transform: translate(-42%, -50%);
     }
 }

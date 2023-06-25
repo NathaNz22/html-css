@@ -16,7 +16,7 @@ body, html {
 
 main {
     width: 500px;
-    height: 100vh;
+    height: 100%;
 
     position: relative;
     margin: auto;
@@ -29,13 +29,14 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     border-radius: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
     overflow: hidden;
 
     background-color: white;
+
+    transform: translate(-50%, -50%);
 
     transition: width .3s, height .3s;
 }
@@ -65,6 +66,16 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+        /* Ícones */
+
+    div.material-symbols-outlined {
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+        user-select: none;
+        color: white;
+    }
+
         /* Campo de entrada de Email e Senha*/
 
 div.campos {
@@ -77,13 +88,8 @@ div.campos {
 }
 
 .campos input {
-    width: calc(100% - 47px);
+    width: calc(100% - 45px);
     height: calc(100% - 4px);
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-39%, -50%);
 
     border: 1px solid #abd4f5;
     border-radius: 8px;
@@ -92,6 +98,8 @@ div.campos {
     font-size: 1em;
 
     background-color: #abd4f5;
+
+    transform: translateY(-28%);
 }
 
 .campos input:focus {
@@ -102,25 +110,15 @@ div.campos {
     margin-bottom: 1px;
 }
 
-        /* Ícones */
-
-div.material-symbols-outlined {
-    font-size: 2em;
-
-    transform: translate(20%, 15%);
-
-    user-select: none;
-    color: white;
-}
-
         /* Botão de "Entrar" */
 
 div#entrar input {
+    display: block;
     width: calc(100% - 20px);
     height: 2.5em;
 
     border: 1px solid #3dafa9;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10% 0px 10px;
     border-radius: 5px;
 
     text-align: center;

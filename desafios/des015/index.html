@@ -22,14 +22,14 @@
                     Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
                 
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campos" id="campoEmail">
                         <label for="email">
                             <div class="material-symbols-outlined">
                                 person
                             </div>
                         </label>
-                        <input type="email" name="email" id="email" placeholder=" seu e-mail" required>
+                        <input type="email" name="email" id="email" placeholder=" seu e-mail" autocomplete="email" required>
                     </div>
 
                     <div class="campos" id="campoSenha">
@@ -38,7 +38,7 @@
                                 key
                             </div>
                         </label>
-                        <input type="password" name="password" id="password" placeholder=" sua senha" minlength="8" required>
+                        <input type="password" name="password" id="password" placeholder=" sua senha" minlength="8" autocomplete="current-password" required>
                     </div>
 
                     <div id="entrar">
