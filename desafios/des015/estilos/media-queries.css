@@ -8,7 +8,7 @@
 
     section#login {
         width: 90vw;
-        height: 53%;
+        height: 50%;
     }
         /* Imagem */
     div#imagem {
@@ -32,8 +32,8 @@
     }
 
     div#formulario > p {
-        padding: 20px;
-        padding-top: 0px;
+        margin: 20px;
+        margin-top: 0px;
         font-size: 1em;
     }
 }
@@ -75,6 +75,6 @@
 
     div#formulario > p {
         font-size: 1.1em;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
