@@ -9,8 +9,9 @@
 
     section#login {
         width: 90vw;
-        height: 55%;
+        height: 350px;
     }
+
         /* Imagem */
     div#imagem {
         width: 40%;
@@ -42,11 +43,12 @@
 @media screen and (min-width: 993px) {
     body {
         background-image: linear-gradient(to bottom, rgb(248, 69, 69), rgb(128, 46, 46) 60%);
+        overflow: hidden;
     }
 
     section#login {
-        width: 95vw;
-        height: 55%;
+        width: 80vw;
+        height: 380px;
     }
 
         /* Imagem */
