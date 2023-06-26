@@ -16,18 +16,15 @@ body, html {
 
 main {
     position: relative;
-    width: 500px;
-    height: 100%;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
 }
 
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
+
     overflow: hidden;
 
     width: 250px;
@@ -54,10 +51,15 @@ div#imagem {
 
     /* Formulário */
 
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
 div#formulario > h1 {
     display: block;
 
-    margin: 13px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
