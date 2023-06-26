@@ -14,14 +14,16 @@ body, html {
     height: 100vh;
 }
 
+body {
+    overflow: hidden;
+}
+
 main {
     width: 500px;
     height: 100%;
 
     position: relative;
     margin: auto;
-
-    overflow: hidden;
 }
 
 section#login {
