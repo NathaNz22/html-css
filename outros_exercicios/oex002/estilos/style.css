@@ -25,20 +25,24 @@ main {
 
 section#login {
     width: 250px;
-    height: 515px;
+    height: 525px;
 
     background-color: white;
 
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #0000005e;
     overflow: hidden;
+
+    transition: width 0.2s, height 0.2s;
 }
 
 div#formulario > h1 {
     text-align: center;
+    font-size: 1.7em;
 }
 
 div#formulario > p {
-    padding: 10px;
+    margin: 10px 20px;
     font-size: 0.8em;
 }
 
@@ -52,6 +56,48 @@ div#imagem {
     background-size: cover;
 }
 
+/* Campos */
+
+div.campo {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1px;
+    margin: 5px 20px;
+    border-radius: 7px;
+    background-color: #5f2c82;
+}
+
+div.campo input {
+    width: calc(100% - 10px);
+    flex-grow: 1;
+    margin: 1.5px;
+    border-radius: 7px;
+    border: none;
+    padding: 3px;
+
+    background-color: #abddff;
+    font-size: 0.9em;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.campo input:focus {
+    background-color: white;
+}
+
+/* ÍCONES*/
+
+div.campo .material-symbols-outlined {
+    transform: translateY(15%);
+    align-self: center;
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+
 /* Botão "Enviar" */
 
 div#botaoEnviar {
@@ -60,7 +106,7 @@ div#botaoEnviar {
 }
 
 div#botaoEnviar input {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 2.5em;
     
     font-size: 1em;
@@ -70,6 +116,7 @@ div#botaoEnviar input {
     background-color: #0096fa;
 
     padding: 10px;
+    margin-top: 5px;
     border-radius: 7px;
     border: 1px solid #0081fa;
 
@@ -90,7 +137,7 @@ div#botaoEsqueciSenha {
 
 div#botaoEsqueciSenha a {
     display: block;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 2.5em;
 
     border: 1px solid #0081fa;
@@ -107,6 +154,7 @@ div#botaoEsqueciSenha a {
 
 div#botaoEsqueciSenha .material-symbols-outlined {
     font-size: 1.2em;
+    user-select: none;
 }
 
 div#botaoEsqueciSenha a:hover {
