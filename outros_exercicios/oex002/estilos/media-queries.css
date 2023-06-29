@@ -6,7 +6,7 @@
     }
 
     section#login {
-        width: 80vw;
+        width: 70vw;
         height: 350px;
         display: flex;
     }
@@ -14,7 +14,7 @@
     /* IMAGEM */
 
     div#imagem {
-        width: 60%;
+        width: 75%;
         height: 100%;
         align-self: left;
         background-image: url(../imagens/pexels-luis-quintero-2471235.jpg);
@@ -45,14 +45,14 @@
     section#login {
         display: flex;
         flex-direction: row-reverse;
-        width: 90vw;
+        width: 80vw;
         height: 390px;
     }
 
     /* IMAGEM */
     
     div#imagem {
-        width: 65%;
+        width: 80%;
         height: 100%;
         background-image: url(../imagens/pexels-miguel-á-padriñán-68556.jpg);
         background-position: top left;
